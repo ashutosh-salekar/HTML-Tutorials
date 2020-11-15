@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Form</title>
+</head>
+<body>
+    <form action=""> <!--action attribute will take backend file name to submit following values-->
+       
+        <!-- input tag is usedd to take input from user.
+        type attribute decide the type of input
+        name attribute is variabke name in which entered value gets stored -->
+        Name: <input type="text" name="myname"><br><br>
+        Role: <input type="text" name="myrole"><br><br>
+        Email: <input type="email" name="mymail"><br><br>
+        date: <input type="date" name="mydate"><br><br>
+        Are you eligible? <input type="checkbox" name="myeligibility"><br><br>
+        Gender: male <input type="radio" name="mygender"> female <input type="radio" name="mygender"><br><br>
+        
+        write about yourself: <br>
+        <textarea name="mynfo" rows="5" cols="30"></textarea><br><br>
+        <!-- textarea tag is used to take large text input from user -->
+
+        <!-- Select tag is use to select one option from many -->
+        <label for="car">Car: </label>
+        <select name="mycar" id="car">
+            <option value="lamb">Lamborghini</option>
+            <option value="bmw">BMW</option>
+            <option value="mer">mercedes</option>
+            <option value="aud">Audi</option>
+        </select><br><br>
+
+        Submit: <input type="submit" value="Click to submit"><br><br><br>
+        
+        
+        <!-- This is standerd method to take input -->
+        <!-- In this method when we click on displayed name then also the entry field get selected -->
+        
+        <label for="name">Name: </label> <!--"for" and "id" attributes should have same value to get linked-->
+        <input type="text" name="myname" id="name"><br><br>
+        
+        <label for="role">Role: </label>
+        <input type="text" name="myrole" id="role"><br><br>
+
+        <label for="mail">Email: </label>
+        <input type="email" name="mymail" id="mail"><br><br>
+
+    </form>
+    
+</body>
+</html>
